@@ -1,0 +1,2 @@
+# calculator
+first training excersice
