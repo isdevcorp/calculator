@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // TOM you are a HOMO
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
