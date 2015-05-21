@@ -11,15 +11,27 @@ import com.corp.isdev.calculator.Callbacks.MathCallbacks.Operands.OperandFactory
 public class MainActivityViewModel {
 
     // Properties
-    private int currentNumber = 0;
-    private int calculatedNumber = 0;
+    private BaseActivity _activity;
+
+    private int _currentNumber = 0;
+    private int _calculatedNumber = 0;
 
     public View.OnClickListener onOperandClicked = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            int numberClicked = OperandFactory.getOperandValue((OperandEnum)v.getTag());
-            currentNumber = (currentNumber * 10) + numberClicked;
+            updateCurrentNumber((_currentNumber * 10) + OperandFactory.getOperandValue((OperandEnum)v.getTag()));
         }
     };
+
+    // Ctor
+    public MainActivityViewModel(BaseActivity activity) {
+        _activity = activity;
+    }
+
     // Functions
+    private void updateCurrentNumber(int newNumber)
+    {
+        _currentNumber = newNumber;
+        _activity.UpdateProperty("txtDisplay",String.valueOf(newNumber));
+    }
 }

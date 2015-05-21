@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.GridLayout;
 
@@ -12,9 +13,9 @@ import com.corp.isdev.calculator.Callbacks.MathCallbacks.Operands.OperandEnum;
 import com.corp.isdev.calculator.Callbacks.MathCallbacks.Operands.OperandFactory;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
-    private MainActivityViewModel viewModel = new MainActivityViewModel();
+    private MainActivityViewModel viewModel = new MainActivityViewModel(this);
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
             numbers.addView(btn);
         }
+
     }
 
     @Override
