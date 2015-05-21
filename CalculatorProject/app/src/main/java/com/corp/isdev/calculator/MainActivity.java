@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         for (OperandEnum operand : OperandEnum.values()) {
             Button btn = new Button(this);
             btn.setOnClickListener(viewModel.onOperandClicked);
-            btn.setText(OperandFactory.getOperandValue(operand));
+            btn.setText(String.valueOf(OperandFactory.getOperandValue(operand)));
             btn.setTag(operand);
 
             numbers.addView(btn);

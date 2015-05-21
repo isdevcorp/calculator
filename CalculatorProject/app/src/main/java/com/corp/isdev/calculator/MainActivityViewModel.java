@@ -17,7 +17,6 @@ public class MainActivityViewModel {
     public View.OnClickListener onOperandClicked = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            // TODO: Should be tested!
             int numberClicked = OperandFactory.getOperandValue((OperandEnum)v.getTag());
             currentNumber = (currentNumber * 10) + numberClicked;
         }
