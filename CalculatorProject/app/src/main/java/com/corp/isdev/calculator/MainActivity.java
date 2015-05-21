@@ -11,6 +11,8 @@ import android.widget.GridLayout;
 
 public class MainActivity extends AppCompatActivity {
 
+    private MainActivityViewModel viewModel = new MainActivityViewModel();
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
