@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.GridLayout;
+import android.widget.TextView;
 
 import com.corp.isdev.calculator.Callbacks.MathCallbacks.Operands.OperandEnum;
 import com.corp.isdev.calculator.Callbacks.MathCallbacks.Operands.OperandFactory;
@@ -21,15 +22,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        GridLayout numbers = (GridLayout)findViewById(R.id.gridNumbers);
-        for (OperandEnum operand : OperandEnum.values()) {
-            Button btn = new Button(this);
-            btn.setOnClickListener(viewModel.onOperandClicked);
-            btn.setText(String.valueOf(OperandFactory.getOperandValue(operand)));
-            btn.setTag(operand);
-
-            numbers.addView(btn);
-        }
+        TextView txtDisplay = (TextView)findViewById(R.id.txtDisplay);
+        txtDisplay.setText(String.valueOf(0));
     }
 
     @Override
