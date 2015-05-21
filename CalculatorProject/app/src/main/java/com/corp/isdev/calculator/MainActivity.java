@@ -9,6 +9,8 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
+    private MainActivityViewModel viewModel = new MainActivityViewModel();
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // TOM you are a HOMO
