@@ -8,6 +8,9 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.GridLayout;
 
+import com.corp.isdev.calculator.Callbacks.MathCallbacks.Operands.OperandEnum;
+import com.corp.isdev.calculator.Callbacks.MathCallbacks.Operands.OperandFactory;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,11 +22,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         GridLayout numbers = (GridLayout)findViewById(R.id.gridNumbers);
-        for (Integer i = 1; i <= 9; i++) {
+        for (OperandEnum operand : OperandEnum.values()) {
             Button btn = new Button(this);
-            btn.setText(i.toString());
+            btn.setOnClickListener(viewModel.onOperandClicked);
+            btn.setText(OperandFactory.getOperandValue(operand));
+            btn.setTag(operand);
+
             numbers.addView(btn);
-            btn.setTag(i);
         }
     }
 
