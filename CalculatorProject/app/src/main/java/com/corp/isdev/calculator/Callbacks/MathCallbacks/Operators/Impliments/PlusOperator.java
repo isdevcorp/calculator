@@ -1,6 +1,6 @@
-package com.corp.isdev.calculator.Callbacks.MathCallbacks.Impliments;
+package com.corp.isdev.calculator.Callbacks.MathCallbacks.Operators.Impliments;
 
-import com.corp.isdev.calculator.Callbacks.MathCallbacks.IOperator;
+import com.corp.isdev.calculator.Callbacks.MathCallbacks.Operators.IOperator;
 
 /**
  * Created by USER on 18/05/2015.

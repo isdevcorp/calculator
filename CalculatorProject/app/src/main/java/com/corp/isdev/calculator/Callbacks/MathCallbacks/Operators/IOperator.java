@@ -1,4 +1,4 @@
-package com.corp.isdev.calculator.Callbacks.MathCallbacks;
+package com.corp.isdev.calculator.Callbacks.MathCallbacks.Operators;
 
 /**
  * Created by USER on 18/05/2015.

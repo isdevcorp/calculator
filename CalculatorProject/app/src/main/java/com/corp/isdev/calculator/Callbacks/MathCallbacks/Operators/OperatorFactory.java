@@ -1,7 +1,7 @@
-package com.corp.isdev.calculator.Callbacks.MathCallbacks;
+package com.corp.isdev.calculator.Callbacks.MathCallbacks.Operators;
 
-import com.corp.isdev.calculator.Callbacks.MathCallbacks.Impliments.MinusOperator;
-import com.corp.isdev.calculator.Callbacks.MathCallbacks.Impliments.PlusOperator;
+import com.corp.isdev.calculator.Callbacks.MathCallbacks.Operators.Impliments.MinusOperator;
+import com.corp.isdev.calculator.Callbacks.MathCallbacks.Operators.Impliments.PlusOperator;
 
 /**
  * Created by USER on 18/05/2015.
