@@ -5,15 +5,24 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.GridLayout;
 
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // TOM you are a HOMO
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        GridLayout numbers = (GridLayout)findViewById(R.id.gridNumbers);
+        for (Integer i = 1; i <= 9; i++) {
+            Button btn = new Button(this);
+            btn.setText(i.toString());
+            numbers.addView(btn);
+            btn.setTag(i);
+        }
     }
 
     @Override
