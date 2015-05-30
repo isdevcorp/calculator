@@ -17,4 +17,5 @@
     <string name="btnDivide">/</string>
     <string name="btnMinus">-</string>
     <string name="btnPlusa">+</string>
+    <string name="txtOne">1</string>
 </resources>
