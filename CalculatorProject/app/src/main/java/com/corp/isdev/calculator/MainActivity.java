@@ -45,6 +45,12 @@ public class MainActivity extends AppCompatActivity implements Observer {
 
     @Override
     public void update(Observable observable, Object data) {
+        if (!(observable instanceof CalculatorModel)) {
+            throw new IllegalArgumentException("The observable is not instance of CalculatorModel!");
+        }
 
+        CalculatorModel calcModel = (CalculatorModel)observable;
+
+        // TODO: Update the view by the calc info
     }
 }

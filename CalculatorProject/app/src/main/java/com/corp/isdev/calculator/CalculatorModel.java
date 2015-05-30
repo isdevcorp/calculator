@@ -14,7 +14,11 @@ public class CalculatorModel extends Observable {
     }
 
     public void setCurrent(int current) {
-        this._current = current;
+        if(this._current != current) {
+            this._current = current;
+            setChanged();
+            notifyObservers();
+        }
     }
 
     public int getPrevious() {
