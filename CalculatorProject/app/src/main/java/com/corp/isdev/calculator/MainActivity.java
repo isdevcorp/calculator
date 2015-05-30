@@ -18,8 +18,6 @@ public class MainActivity extends AppCompatActivity implements Observer {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Button btnOne = (Button)findViewById(R.id)
     }
 
     @Override

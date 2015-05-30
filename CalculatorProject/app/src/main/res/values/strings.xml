@@ -13,4 +13,10 @@
     <string name="txtSeven">7</string>
     <string name="txtEight">8</string>
     <string name="txtNine">9</string>
+    <string name="txtDiv">/</string>
+    <string name="txtAdd">+</string>
+    <string name="txtSub">-</string>
+    <string name="txtMul">*</string>
+    <string name="txtReset">C</string>
+    <string name="txtClear">CC</string>
 </resources>
