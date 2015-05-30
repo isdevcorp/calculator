@@ -9,7 +9,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.GridLayout;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.Observable;
+import java.util.Observer;
+
+public class MainActivity extends AppCompatActivity implements Observer {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,5 +41,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void update(Observable observable, Object data) {
+
     }
 }
