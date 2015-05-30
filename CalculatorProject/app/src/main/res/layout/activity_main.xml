@@ -21,39 +21,28 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:columnCount="4"
-            android:rowCount="4"
-            android:layout_gravity="center_horizontal"
-            android:alignmentMode="alignMargins">
+            android:rowCount="4">
 
-            <Button android:layout_row="0" android:layout_column="0" android:text="@string/btn1"
-                android:layout_gravity="fill_horizontal" android:tag="n1" />
-            <Button android:layout_row="0" android:layout_column="1" android:text="@string/btn2"
-                android:layout_gravity="fill_horizontal" android:tag="n2" />
-            <Button android:layout_row="0" android:layout_column="2" android:text="@string/btn3"
-                android:layout_gravity="fill_horizontal" android:tag="n3" />
-            <Button android:layout_row="1" android:layout_column="0" android:text="@string/btn4"
-                android:layout_gravity="fill_horizontal" android:tag="n4" />
-            <Button android:layout_row="1" android:layout_column="1" android:text="@string/btn5"
-                android:layout_gravity="fill_horizontal" android:tag="n5" />
-            <Button android:layout_row="1" android:layout_column="2" android:text="@string/btn6"
-                android:layout_gravity="fill_horizontal" android:tag="n6" />
-            <Button android:layout_row="2" android:layout_column="0" android:text="@string/btn7"
-                android:layout_gravity="fill_horizontal" android:tag="n7" />
-            <Button android:layout_row="2" android:layout_column="1" android:text="@string/btn8"
-                android:layout_gravity="fill_horizontal" android:tag="n8" />
-            <Button android:layout_row="2" android:layout_column="2" android:text="@string/btn9"
-                android:layout_gravity="fill_horizontal" android:tag="n9" />
-            <Button android:layout_row="3" android:layout_column="1" android:text="@string/btn0"
-                android:layout_gravity="fill_horizontal" android:tag="n0" />
-
-            <Button android:layout_row="0" android:layout_column="3" android:text="@string/btnPlus"
-                android:layout_gravity="fill_horizontal" />
-            <Button android:layout_row="1" android:layout_column="3" android:text="@string/btnDivide"
-                android:layout_gravity="fill_horizontal" />
-            <Button android:layout_row="2" android:layout_column="3" android:text="@string/btnMinus"
-                android:layout_gravity="fill_horizontal" />
-            <Button android:layout_row="3" android:layout_column="2" android:text="@string/btnPlus"
-                android:layout_columnSpan="2" android:layout_gravity="fill_horizontal" />
+            <Button android:layout_column="0" android:layout_row="0"
+                android:text="@string/txtOne" android:id="@+id/btnOne" />
+            <Button android:layout_column="1" android:layout_row="0"
+                android:text="@string/txtTwo" android:id="@+id/btnTwo" />
+            <Button android:layout_column="2" android:layout_row="0"
+                android:text="@string/txtThree" android:id="@+id/btnThree" />
+            <Button android:layout_column="0" android:layout_row="1"
+                android:text="@string/txtFour" android:id="@+id/btnFour" />
+            <Button android:layout_column="1" android:layout_row="1"
+                android:text="@string/txtFive" android:id="@+id/btnFive" />
+            <Button android:layout_column="2" android:layout_row="1"
+                android:text="@string/txtSix" android:id="@+id/btnSix" />
+            <Button android:layout_column="0" android:layout_row="2"
+                android:text="@string/txtSeven" android:id="@+id/btnSeven" />
+            <Button android:layout_column="1" android:layout_row="2"
+                android:text="@string/txtEight" android:id="@+id/btnEight" />
+            <Button android:layout_column="2" android:layout_row="2"
+                android:text="@string/txtNine" android:id="@+id/btnNine" />
+            <Button android:layout_column="1" android:layout_row="3"
+                android:text="@string/txtZero" android:id="@+id/btnZero" />
 
         </GridLayout>
 

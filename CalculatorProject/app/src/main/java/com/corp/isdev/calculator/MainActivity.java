@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements Observer {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Button btnOne = (Button)findViewById(R.id)
     }
 
     @Override
